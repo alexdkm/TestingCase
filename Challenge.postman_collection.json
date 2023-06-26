@@ -1,0 +1,1516 @@
+{
+	"info": {
+		"_postman_id": "32bab1b8-7e2b-4ade-bcc6-a88a23612aa6",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26420940"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Alex Beli",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "{{$randomFirstName}}@example.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "08212121212121",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "engga tau males",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "city",
+									"value": "Bandung",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://market-final-project.herokuapp.com/auth/register",
+							"protocol": "https",
+							"host": [
+								"market-final-project",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code adalah 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"Avis@example.com\",\r\n  \"password\": \"12345678\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://market-final-project.herokuapp.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"market-final-project",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find User By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://market-final-project.herokuapp.com/auth/user",
+							"protocol": "https",
+							"host": [
+								"market-final-project",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Alexander",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "0812121212",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "jkt",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://market-final-project.herokuapp.com/auth/user",
+							"protocol": "https",
+							"host": [
+								"market-final-project",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "current_password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://market-final-project.herokuapp.com/auth/change-password",
+							"protocol": "https",
+							"host": [
+								"market-final-project",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seller",
+			"item": [
+				{
+					"name": "seller - product",
+					"item": [
+						{
+							"name": "Upload Product",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Produk berhasil diupload\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "tes barang  4",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "tes barang ",
+											"type": "text"
+										},
+										{
+											"key": "base_price",
+											"value": "15000",
+											"type": "text"
+										},
+										{
+											"key": "category_ids",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "jakarta",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Alex/Desktop/contoh bug report.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show all product",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil menampilkan semua produk seller\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show product by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil menampilkan produk seller by Id\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product/:id",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Product Status",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "accepted",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product/:id",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update product",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Testing",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category_ids",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product/:id",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil menghapus produk seller\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://market-final-project.herokuapp.com/seller/product/:id",
+									"protocol": "https",
+									"host": [
+										"market-final-project",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"seller",
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "57215"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "seller - category",
+					"item": [
+						{
+							"name": "Show All Product Category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}seller/category",
+									"host": [
+										"{{baseUrl}}seller"
+									],
+									"path": [
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Category By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}seller/category/:id",
+									"host": [
+										"{{baseUrl}}seller"
+									],
+									"path": [
+										"category",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "seller - banner",
+					"item": [
+						{
+							"name": "seller - order",
+							"item": [
+								{
+									"name": "Get Order",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "access_token",
+												"value": "{{access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "graphql",
+											"graphql": {
+												"query": "",
+												"variables": ""
+											}
+										},
+										"url": {
+											"raw": "https://market-final-project.herokuapp.com/seller/order?status=declined",
+											"protocol": "https",
+											"host": [
+												"market-final-project",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"seller",
+												"order"
+											],
+											"query": [
+												{
+													"key": "status",
+													"value": "declined"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Order By Id",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "access_token",
+												"value": "{{access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "graphql",
+											"graphql": {
+												"query": "",
+												"variables": ""
+											}
+										},
+										"url": {
+											"raw": "https://market-final-project.herokuapp.com/seller/order/:id",
+											"protocol": "https",
+											"host": [
+												"market-final-project",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"seller",
+												"order",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Order By Product Id",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "access_token",
+												"value": "{{access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "graphql",
+											"graphql": {
+												"query": "",
+												"variables": ""
+											}
+										},
+										"url": {
+											"raw": "https://market-final-project.herokuapp.com/seller/order/:product_id",
+											"protocol": "https",
+											"host": [
+												"market-final-project",
+												"herokuapp",
+												"com"
+											],
+											"path": [
+												"seller",
+												"order",
+												":product_id"
+											],
+											"variable": [
+												{
+													"key": "product_id",
+													"value": "5"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "access_token",
+												"value": "{{access_token}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "status",
+													"value": "",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}seller/order/:id",
+											"host": [
+												"{{baseUrl}}seller"
+											],
+											"path": [
+												"order",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "55023"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Show All Banner",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}seller/banner",
+									"host": [
+										"{{baseUrl}}seller"
+									],
+									"path": [
+										"banner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Banner by Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}seller/banner/:id",
+									"host": [
+										"{{baseUrl}}seller"
+									],
+									"path": [
+										"banner",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "History",
+			"item": [
+				{
+					"name": "Show All History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}history",
+							"host": [
+								"{{baseUrl}}history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show History by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}history/:id",
+							"host": [
+								"{{baseUrl}}history"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "Show All Notification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}notification",
+							"host": [
+								"{{baseUrl}}notification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Notification by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}notification/:id",
+							"host": [
+								"{{baseUrl}}notification"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "114378"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Notification by Id Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "access_token",
+								"value": "{{access_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}notification/:id",
+							"host": [
+								"{{baseUrl}}notification"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "114378"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buyer",
+			"item": [
+				{
+					"name": "buyer - product",
+					"item": [
+						{
+							"name": "Show All Product",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil menampilkan semua Product yang tersedia\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "per_page",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}buyer/product",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Product By Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil menampilkan Product by Id\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "status",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "per_page",
+											"value": "10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}buyer/product/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "57132"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "buyer - order",
+					"item": [
+						{
+							"name": "Create Order",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Berhasil memesan barang\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlNhbW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNjgwMTkxNjE0fQ.--iVJ-NVPFG4aOkNc7uxT0p90V6WnBaLSRLtZLgkMQw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"product_id\": 57214,\r\n  \"bid_price\": 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}buyer/order",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"order"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show All Order",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Menampilkan semua order buyer\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlNhbW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNjgwMTkxNjE0fQ.--iVJ-NVPFG4aOkNc7uxT0p90V6WnBaLSRLtZLgkMQw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/order",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"order"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Order by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Menampilkan semua order buyer by Id\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlNhbW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNjgwMTkxNjE0fQ.--iVJ-NVPFG4aOkNc7uxT0p90V6WnBaLSRLtZLgkMQw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/order/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"order",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{buyer_order_id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Bid Price",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IlNhbW15QGV4YW1wbGUuY29tIiwiaWF0IjoxNjgwMTkxNjE0fQ.--iVJ-NVPFG4aOkNc7uxT0p90V6WnBaLSRLtZLgkMQw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"bid_price\": 5000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}buyer/order/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"order",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "{{buyer_order_id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Order By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/order/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"order",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "22888"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "buyer - wishlist",
+					"item": [
+						{
+							"name": "Create Wishlist",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RpbmdAZ21haWwyMDAuY29tIiwiaWF0IjoxNjc5OTU1OTU4fQ.5z83CsGAgAJM3rbHmM-dRLiS002Y8INXG6Ci_8M6Z_8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "product_id",
+											"value": "55016",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}buyer/wishlist",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"wishlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show All Wishlist",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{buyer_access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/wishlist",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"wishlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Wishlist by Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{buyer_access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/wishlist/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"wishlist",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6048"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Wishlist by Id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "access_token",
+										"value": "{{buyer_access_token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}buyer/wishlist/:id",
+									"host": [
+										"{{baseUrl}}buyer"
+									],
+									"path": [
+										"wishlist",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6047"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

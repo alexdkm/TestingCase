@@ -1,0 +1,151 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1680273730100,619,Register Seller,201,Created,Seller 1-1,text,true,,597,379,1,1,http://market-final-project.herokuapp.com/auth/register,619,0,271
+1680273730721,355,Login Seller,201,Created,Seller 1-1,text,true,,508,284,1,1,http://market-final-project.herokuapp.com/auth/login,355,0,0
+1680273731103,590,Register Seller,201,Created,Seller 1-2,text,true,,598,380,2,2,http://market-final-project.herokuapp.com/auth/register,590,0,245
+1680273731694,333,Login Seller,201,Created,Seller 1-2,text,true,,510,285,2,2,http://market-final-project.herokuapp.com/auth/login,333,0,0
+1680273731077,1024,Post Seller Product Jual,201,Created,Seller 1-1,text,true,,677,148602,3,3,http://market-final-project.herokuapp.com/seller/product,1024,0,0
+1680273732101,550,Post Seller Product Hapus,201,Created,Seller 1-1,text,true,,678,148595,3,3,http://market-final-project.herokuapp.com/seller/product,550,0,0
+1680273732102,630,Register Seller,201,Created,Seller 1-3,text,true,,595,377,3,3,http://market-final-project.herokuapp.com/auth/register,630,0,251
+1680273732652,281,Get Seller Product,200,OK,Seller 1-1,text,true,,1170,312,3,3,http://market-final-project.herokuapp.com/seller/product,281,0,0
+1680273732028,1013,Post Seller Product Jual,201,Created,Seller 1-2,text,true,,677,148531,3,3,http://market-final-project.herokuapp.com/seller/product,1013,0,0
+1680273732732,335,Login Seller,201,Created,Seller 1-3,text,true,,503,282,3,3,http://market-final-project.herokuapp.com/auth/login,335,0,0
+1680273732933,277,Get Seller Product By ID,200,OK,Seller 1-1,text,true,,728,318,4,4,http://market-final-project.herokuapp.com/seller/product/57740,277,0,0
+1680273733210,330,Register Buyer,201,Created,Seller 1-1,text,true,,594,376,4,4,http://market-final-project.herokuapp.com/auth/register,330,0,0
+1680273733041,538,Post Seller Product Hapus,201,Created,Seller 1-2,text,true,,678,148580,4,4,http://market-final-project.herokuapp.com/seller/product,538,0,0
+1680273733099,576,Register Seller,201,Created,Seller 1-4,text,true,,596,378,4,4,http://market-final-project.herokuapp.com/auth/register,576,0,243
+1680273733541,348,Login Buyer,201,Created,Seller 1-1,text,true,,502,282,4,4,http://market-final-project.herokuapp.com/auth/login,348,0,0
+1680273733579,381,Get Seller Product,200,OK,Seller 1-2,text,true,,1170,313,4,4,http://market-final-project.herokuapp.com/seller/product,381,0,0
+1680273733676,369,Login Seller,201,Created,Seller 1-4,text,true,,505,283,4,4,http://market-final-project.herokuapp.com/auth/login,369,0,0
+1680273733068,1017,Post Seller Product Jual,201,Created,Seller 1-3,text,true,,677,148575,4,4,http://market-final-project.herokuapp.com/seller/product,1017,0,0
+1680273734099,589,Register Seller,201,Created,Seller 1-5,text,true,,598,380,5,5,http://market-final-project.herokuapp.com/auth/register,589,0,252
+1680273733961,3042,Get Seller Product By ID,200,OK,Seller 1-2,text,true,,716,319,7,7,http://market-final-project.herokuapp.com/seller/product/57742,3042,0,0
+1680273735100,2133,Register Seller,201,Created,Seller 1-6,text,true,,597,379,8,8,http://market-final-project.herokuapp.com/auth/register,2133,0,248
+1680273736099,1135,Register Seller,201,Created,Seller 1-7,text,true,,602,384,8,8,http://market-final-project.herokuapp.com/auth/register,1135,0,244
+1680273734045,3196,Post Seller Product Jual,201,Created,Seller 1-4,text,true,,677,148584,8,8,http://market-final-project.herokuapp.com/seller/product,3196,0,0
+1680273737004,336,Register Buyer,201,Created,Seller 1-2,text,true,,597,379,8,8,http://market-final-project.herokuapp.com/auth/register,335,0,0
+1680273737235,355,Login Seller,201,Created,Seller 1-7,text,true,,519,289,8,8,http://market-final-project.herokuapp.com/auth/login,355,0,0
+1680273737235,428,Login Seller,201,Created,Seller 1-6,text,true,,508,284,8,8,http://market-final-project.herokuapp.com/auth/login,428,0,0
+1680273737340,334,Login Buyer,201,Created,Seller 1-2,text,true,,509,285,8,8,http://market-final-project.herokuapp.com/auth/login,334,0,0
+1680273737100,646,Register Seller,201,Created,Seller 1-8,text,true,,602,384,8,8,http://market-final-project.herokuapp.com/auth/register,646,0,244
+1680273737243,515,Post Seller Product Hapus,201,Created,Seller 1-4,text,true,,678,148593,8,8,http://market-final-project.herokuapp.com/seller/product,515,0,0
+1680273734688,3085,Login Seller,201,Created,Seller 1-5,text,true,,510,285,8,8,http://market-final-project.herokuapp.com/auth/login,3084,0,0
+1680273734085,3722,Post Seller Product Hapus,201,Created,Seller 1-3,text,true,,678,148560,8,8,http://market-final-project.herokuapp.com/seller/product,3722,0,0
+1680273737746,341,Login Seller,201,Created,Seller 1-8,text,true,,519,289,8,8,http://market-final-project.herokuapp.com/auth/login,340,0,0
+1680273737809,642,Get Seller Product,200,OK,Seller 1-3,text,true,,1170,309,9,9,http://market-final-project.herokuapp.com/seller/product,641,0,0
+1680273737759,789,Get Seller Product,200,OK,Seller 1-4,text,true,,1158,310,9,9,http://market-final-project.herokuapp.com/seller/product,789,0,0
+1680273737590,1008,Post Seller Product Jual,201,Created,Seller 1-7,text,true,,677,148536,9,9,http://market-final-project.herokuapp.com/seller/product,1008,0,0
+1680273737664,1023,Post Seller Product Jual,201,Created,Seller 1-6,text,true,,677,148578,9,9,http://market-final-project.herokuapp.com/seller/product,1023,0,0
+1680273737774,1016,Post Seller Product Jual,201,Created,Seller 1-5,text,true,,677,148539,9,9,http://market-final-project.herokuapp.com/seller/product,1016,0,0
+1680273738548,267,Get Seller Product By ID,200,OK,Seller 1-4,text,true,,716,316,9,9,http://market-final-project.herokuapp.com/seller/product/57746,267,0,0
+1680273738087,1015,Post Seller Product Jual,201,Created,Seller 1-8,text,true,,677,148576,10,10,http://market-final-project.herokuapp.com/seller/product,1015,0,0
+1680273738687,520,Post Seller Product Hapus,201,Created,Seller 1-6,text,true,,678,148579,10,10,http://market-final-project.herokuapp.com/seller/product,520,0,0
+1680273739207,279,Get Seller Product,200,OK,Seller 1-6,text,true,,1182,312,10,10,http://market-final-project.herokuapp.com/seller/product,279,0,0
+1680273739097,625,Register Seller,201,Created,Seller 1-10,text,true,,601,383,10,10,http://market-final-project.herokuapp.com/auth/register,625,0,245
+1680273739103,632,Post Seller Product Hapus,201,Created,Seller 1-8,text,true,,678,148569,10,10,http://market-final-project.herokuapp.com/seller/product,632,0,0
+1680273739723,334,Login Seller,201,Created,Seller 1-10,text,true,,517,288,10,10,http://market-final-project.herokuapp.com/auth/login,334,0,0
+1680273739736,337,Get Seller Product,200,OK,Seller 1-8,text,true,,1182,318,10,10,http://market-final-project.herokuapp.com/seller/product,337,0,0
+1680273738815,2339,Register Buyer,201,Created,Seller 1-4,text,true,,594,376,10,10,http://market-final-project.herokuapp.com/auth/register,2339,0,0
+1680273738101,3053,Register Seller,201,Created,Seller 1-9,text,true,,598,380,10,10,http://market-final-project.herokuapp.com/auth/register,3053,0,245
+1680273738451,2754,Get Seller Product By ID,200,OK,Seller 1-3,text,true,,716,315,10,10,http://market-final-project.herokuapp.com/seller/product/57744,2754,0,0
+1680273739487,1718,Get Seller Product By ID,200,OK,Seller 1-6,text,true,,728,318,10,10,http://market-final-project.herokuapp.com/seller/product/57749,1718,0,0
+1680273740074,1138,Get Seller Product By ID,200,OK,Seller 1-8,text,true,,728,324,10,10,http://market-final-project.herokuapp.com/seller/product/57751,1138,0,0
+1680273738598,2632,Post Seller Product Hapus,201,Created,Seller 1-7,text,true,,678,148545,10,10,http://market-final-project.herokuapp.com/seller/product,2632,0,0
+1680273738791,2439,Post Seller Product Hapus,201,Created,Seller 1-5,text,true,,678,148596,10,10,http://market-final-project.herokuapp.com/seller/product,2439,0,0
+1680273740057,1187,Post Seller Product Jual,201,Created,Seller 1-10,text,true,,677,148575,10,10,http://market-final-project.herokuapp.com/seller/product,1187,0,0
+1680273741154,380,Login Seller,201,Created,Seller 1-9,text,true,,510,285,10,10,http://market-final-project.herokuapp.com/auth/login,380,0,0
+1680273741154,443,Login Buyer,201,Created,Seller 1-4,text,true,,502,282,10,10,http://market-final-project.herokuapp.com/auth/login,443,0,0
+1680273741231,513,Get Seller Product,200,OK,Seller 1-5,text,true,,1158,313,10,10,http://market-final-project.herokuapp.com/seller/product,513,0,0
+1680273741212,536,Register Buyer,201,Created,Seller 1-8,text,true,,599,381,10,10,http://market-final-project.herokuapp.com/auth/register,536,0,0
+1680273741230,521,Get Seller Product,200,OK,Seller 1-7,text,true,,1182,318,10,10,http://market-final-project.herokuapp.com/seller/product,521,0,0
+1680273741206,600,Register Buyer,201,Created,Seller 1-6,text,true,,600,382,10,10,http://market-final-project.herokuapp.com/auth/register,600,0,0
+1680273741206,603,Register Buyer,201,Created,Seller 1-3,text,true,,598,380,10,10,http://market-final-project.herokuapp.com/auth/register,602,0,0
+1680273741244,653,Post Seller Product Hapus,201,Created,Seller 1-10,text,true,,678,148552,10,10,http://market-final-project.herokuapp.com/seller/product,653,0,0
+1680273741809,362,Login Buyer,201,Created,Seller 1-3,text,true,,511,286,10,10,http://market-final-project.herokuapp.com/auth/login,362,0,0
+1680273741807,431,Login Buyer,201,Created,Seller 1-6,text,true,,516,288,10,10,http://market-final-project.herokuapp.com/auth/login,431,0,0
+1680273741749,795,Login Buyer,201,Created,Seller 1-8,text,true,,514,287,10,10,http://market-final-project.herokuapp.com/auth/login,795,0,0
+1680273741535,1062,Post Seller Product Jual,201,Created,Seller 1-9,text,true,,677,148539,10,10,http://market-final-project.herokuapp.com/seller/product,1062,0,0
+1680273741751,3083,Get Seller Product By ID,200,OK,Seller 1-7,text,true,,728,324,10,10,http://market-final-project.herokuapp.com/seller/product/57748,3083,0,0
+1680273741898,2941,Get Seller Product,200,OK,Seller 1-10,text,true,,1158,317,10,10,http://market-final-project.herokuapp.com/seller/product,2941,0,0
+1680273741745,3095,Get Seller Product By ID,200,OK,Seller 1-5,text,true,,716,319,10,10,http://market-final-project.herokuapp.com/seller/product/57750,3095,0,0
+1680273742598,2330,Post Seller Product Hapus,201,Created,Seller 1-9,text,true,,678,148540,10,10,http://market-final-project.herokuapp.com/seller/product,2330,0,0
+1680273744834,3020,Register Buyer,201,Created,Seller 1-7,text,true,,601,383,10,10,http://market-final-project.herokuapp.com/auth/register,3020,0,0
+1680273747854,336,Login Buyer,201,Created,Seller 1-7,text,true,,518,289,10,10,http://market-final-project.herokuapp.com/auth/login,336,0,0
+1680273744840,5731,Register Buyer,201,Created,Seller 1-5,text,true,,601,383,10,10,http://market-final-project.herokuapp.com/auth/register,5731,0,0
+1680273744929,5644,Get Seller Product,200,OK,Seller 1-9,text,true,,1170,313,10,10,http://market-final-project.herokuapp.com/seller/product,5644,0,0
+1680273744839,5735,Get Seller Product By ID,200,OK,Seller 1-10,text,true,,716,323,10,10,http://market-final-project.herokuapp.com/seller/product/57756,5735,0,0
+1680273750570,351,Login Buyer,201,Created,Seller 1-5,text,true,,518,289,10,10,http://market-final-project.herokuapp.com/auth/login,351,0,0
+1680273750573,353,Get Seller Product By ID,200,OK,Seller 1-9,text,true,,716,319,10,10,http://market-final-project.herokuapp.com/seller/product/57758,353,0,0
+1680273750573,354,Register Buyer,201,Created,Seller 1-10,text,true,,595,377,10,10,http://market-final-project.herokuapp.com/auth/register,354,0,0
+1680273750927,440,Register Buyer,201,Created,Seller 1-9,text,true,,594,376,10,10,http://market-final-project.herokuapp.com/auth/register,440,0,0
+1680273750927,440,Login Buyer,201,Created,Seller 1-10,text,true,,504,283,10,10,http://market-final-project.herokuapp.com/auth/login,440,0,0
+1680273751368,952,Login Buyer,201,Created,Seller 1-9,text,true,,502,282,10,10,http://market-final-project.herokuapp.com/auth/login,952,0,0
+1680273733890,284572,Get Buyer Product,200,OK,Seller 1-1,text,true,,13757510,181,10,10,http://market-final-project.herokuapp.com/buyer/product/,3111,0,0
+1680274018679,539,Get Buyer Product By Id,200,OK,Seller 1-1,text,true,,898,182,10,10,http://market-final-project.herokuapp.com/buyer/product/57740,539,0,269
+1680274019218,303,Post Buyer Order,201,Created,Seller 1-1,text,true,,684,816,10,10,http://market-final-project.herokuapp.com/buyer/order,303,0,0
+1680274019521,265,Get Buyer Order,200,OK,Seller 1-1,text,true,,1222,307,10,10,http://market-final-project.herokuapp.com/buyer/order/,265,0,0
+1680274019786,262,Get Buyer Order by Id,200,OK,Seller 1-1,text,true,,1220,312,10,10,http://market-final-project.herokuapp.com/buyer/order/23596,262,0,0
+1680274020049,271,Edit Bid Price Order,200,OK,Seller 1-1,text,true,,679,410,10,10,http://market-final-project.herokuapp.com/buyer/order/23596,271,0,0
+1680274020320,277,Delete Seller Product,200,OK,Seller 1-1,text,true,,322,366,10,10,http://market-final-project.herokuapp.com/seller/product/57741,277,0,0
+1680273750921,278146,Get Buyer Product,200,OK,Seller 1-5,text,true,,13764199,181,9,9,http://market-final-project.herokuapp.com/buyer/product/,2554,0,0
+1680273742179,287321,Get Buyer Product,200,OK,Seller 1-3,text,true,,13763747,181,9,9,http://market-final-project.herokuapp.com/buyer/product/,5599,0,0
+1680274029143,492,Get Buyer Product By Id,200,OK,Seller 1-5,text,true,,887,182,9,9,http://market-final-project.herokuapp.com/buyer/product/57750,492,0,242
+1680274029635,277,Post Buyer Order,201,Created,Seller 1-5,text,true,,684,809,9,9,http://market-final-project.herokuapp.com/buyer/order,277,0,0
+1680274029578,493,Get Buyer Product By Id,200,OK,Seller 1-3,text,true,,884,182,9,9,http://market-final-project.herokuapp.com/buyer/product/57744,493,0,242
+1680274029938,263,Get Buyer Order,200,OK,Seller 1-5,text,true,,1230,316,9,9,http://market-final-project.herokuapp.com/buyer/order/,263,0,0
+1680274030071,274,Post Buyer Order,201,Created,Seller 1-3,text,true,,684,825,9,9,http://market-final-project.herokuapp.com/buyer/order,274,0,0
+1680274030201,267,Get Buyer Order by Id,200,OK,Seller 1-5,text,true,,1228,321,9,9,http://market-final-project.herokuapp.com/buyer/order/23597,267,0,0
+1680274030345,264,Get Buyer Order,200,OK,Seller 1-3,text,true,,1224,312,9,9,http://market-final-project.herokuapp.com/buyer/order/,264,0,0
+1680274030469,272,Edit Bid Price Order,200,OK,Seller 1-5,text,true,,679,419,9,9,http://market-final-project.herokuapp.com/buyer/order/23597,272,0,0
+1680274030609,260,Get Buyer Order by Id,200,OK,Seller 1-3,text,true,,1222,317,9,9,http://market-final-project.herokuapp.com/buyer/order/23598,260,0,0
+1680274030742,285,Delete Seller Product,200,OK,Seller 1-5,text,true,,322,367,9,9,http://market-final-project.herokuapp.com/seller/product/57755,285,0,0
+1680274030870,266,Edit Bid Price Order,200,OK,Seller 1-3,text,true,,679,415,8,8,http://market-final-project.herokuapp.com/buyer/order/23598,266,0,0
+1680274031136,269,Delete Seller Product,200,OK,Seller 1-3,text,true,,322,363,8,8,http://market-final-project.herokuapp.com/seller/product/57745,269,0,0
+1680273737675,296494,Get Buyer Product,200,OK,Seller 1-2,text,true,,13758841,181,7,7,http://market-final-project.herokuapp.com/buyer/product/,3214,0,0
+1680274034267,504,Get Buyer Product By Id,200,OK,Seller 1-2,text,true,,887,182,7,7,http://market-final-project.herokuapp.com/buyer/product/57742,504,0,250
+1680274034771,297,Post Buyer Order,201,Created,Seller 1-2,text,true,,684,796,7,7,http://market-final-project.herokuapp.com/buyer/order,297,0,0
+1680274035069,291,Get Buyer Order,200,OK,Seller 1-2,text,true,,1226,311,7,7,http://market-final-project.herokuapp.com/buyer/order/,291,0,0
+1680273742544,292846,Get Buyer Product,200,OK,Seller 1-8,text,true,,13763747,181,7,7,http://market-final-project.herokuapp.com/buyer/product/,4518,0,0
+1680274035360,272,Get Buyer Order by Id,200,OK,Seller 1-2,text,true,,1224,316,7,7,http://market-final-project.herokuapp.com/buyer/order/23599,272,0,0
+1680274035633,295,Edit Bid Price Order,200,OK,Seller 1-2,text,true,,679,414,7,7,http://market-final-project.herokuapp.com/buyer/order/23599,295,0,0
+1680274035485,496,Get Buyer Product By Id,200,OK,Seller 1-8,text,true,,903,182,7,7,http://market-final-project.herokuapp.com/buyer/product/57751,496,0,242
+1680274035928,299,Delete Seller Product,200,OK,Seller 1-2,text,true,,322,367,7,7,http://market-final-project.herokuapp.com/seller/product/57743,299,0,0
+1680274035981,297,Post Buyer Order,201,Created,Seller 1-8,text,true,,684,811,6,6,http://market-final-project.herokuapp.com/buyer/order,297,0,0
+1680274036279,277,Get Buyer Order,200,OK,Seller 1-8,text,true,,1232,314,6,6,http://market-final-project.herokuapp.com/buyer/order/,277,0,0
+1680274036557,273,Get Buyer Order by Id,200,OK,Seller 1-8,text,true,,1230,319,6,6,http://market-final-project.herokuapp.com/buyer/order/23600,273,0,0
+1680274036831,277,Edit Bid Price Order,200,OK,Seller 1-8,text,true,,679,417,6,6,http://market-final-project.herokuapp.com/buyer/order/23600,277,0,0
+1680274037108,269,Delete Seller Product,200,OK,Seller 1-8,text,true,,322,372,6,6,http://market-final-project.herokuapp.com/seller/product/57753,269,0,0
+1680273752321,286631,Get Buyer Product,200,OK,Seller 1-9,text,true,,13764199,181,5,5,http://market-final-project.herokuapp.com/buyer/product/,4131,0,0
+1680274039074,494,Get Buyer Product By Id,200,OK,Seller 1-9,text,true,,887,182,5,5,http://market-final-project.herokuapp.com/buyer/product/57758,494,0,244
+1680274039609,290,Post Buyer Order,201,Created,Seller 1-9,text,true,,684,780,5,5,http://market-final-project.herokuapp.com/buyer/order,290,0,0
+1680274039899,270,Get Buyer Order,200,OK,Seller 1-9,text,true,,1223,307,5,5,http://market-final-project.herokuapp.com/buyer/order/,270,0,0
+1680274040169,261,Get Buyer Order by Id,200,OK,Seller 1-9,text,true,,1221,312,5,5,http://market-final-project.herokuapp.com/buyer/order/23601,261,0,0
+1680274040430,270,Edit Bid Price Order,200,OK,Seller 1-9,text,true,,679,410,5,5,http://market-final-project.herokuapp.com/buyer/order/23601,270,0,0
+1680274040700,272,Delete Seller Product,200,OK,Seller 1-9,text,true,,322,367,5,5,http://market-final-project.herokuapp.com/seller/product/57759,272,0,0
+1680273742238,303068,Get Buyer Product,200,OK,Seller 1-6,text,true,,13763747,181,4,4,http://market-final-project.herokuapp.com/buyer/product/,8333,0,0
+1680274045416,491,Get Buyer Product By Id,200,OK,Seller 1-6,text,true,,898,182,4,4,http://market-final-project.herokuapp.com/buyer/product/57749,491,0,242
+1680274045907,277,Post Buyer Order,201,Created,Seller 1-6,text,true,,683,819,4,4,http://market-final-project.herokuapp.com/buyer/order,277,0,0
+1680274046184,273,Get Buyer Order,200,OK,Seller 1-6,text,true,,1227,315,4,4,http://market-final-project.herokuapp.com/buyer/order/,273,0,0
+1680274046457,263,Get Buyer Order by Id,200,OK,Seller 1-6,text,true,,1225,320,4,4,http://market-final-project.herokuapp.com/buyer/order/23602,263,0,0
+1680274046720,268,Edit Bid Price Order,200,OK,Seller 1-6,text,true,,678,417,4,4,http://market-final-project.herokuapp.com/buyer/order/23602,268,0,0
+1680274046989,273,Delete Seller Product,200,OK,Seller 1-6,text,true,,322,366,4,4,http://market-final-project.herokuapp.com/seller/product/57752,273,0,0
+1680273751368,298935,Get Buyer Product,200,OK,Seller 1-10,text,true,,13764199,181,3,3,http://market-final-project.herokuapp.com/buyer/product/,3220,0,0
+1680274050374,523,Get Buyer Product By Id,200,OK,Seller 1-10,text,true,,890,182,3,3,http://market-final-project.herokuapp.com/buyer/product/57756,523,0,270
+1680274050897,275,Post Buyer Order,201,Created,Seller 1-10,text,true,,684,813,3,3,http://market-final-project.herokuapp.com/buyer/order,275,0,0
+1680274051177,1613,Get Buyer Order,200,OK,Seller 1-10,text,true,,1227,308,3,3,http://market-final-project.herokuapp.com/buyer/order/,1613,0,0
+1680274052791,368,Get Buyer Order by Id,200,OK,Seller 1-10,text,true,,1225,313,3,3,http://market-final-project.herokuapp.com/buyer/order/23603,368,0,0
+1680274053160,269,Edit Bid Price Order,200,OK,Seller 1-10,text,true,,679,411,3,3,http://market-final-project.herokuapp.com/buyer/order/23603,269,0,0
+1680274053429,274,Delete Seller Product,200,OK,Seller 1-10,text,true,,322,371,3,3,http://market-final-project.herokuapp.com/seller/product/57757,274,0,0
+1680273741597,313595,Get Buyer Product,200,OK,Seller 1-4,text,true,,13762868,181,2,2,http://market-final-project.herokuapp.com/buyer/product/,3234,0,0
+1680274055302,494,Get Buyer Product By Id,200,OK,Seller 1-4,text,true,,885,182,2,2,http://market-final-project.herokuapp.com/buyer/product/57746,494,0,243
+1680274055797,285,Post Buyer Order,201,Created,Seller 1-4,text,true,,684,784,2,2,http://market-final-project.herokuapp.com/buyer/order,285,0,0
+1680274056082,277,Get Buyer Order,200,OK,Seller 1-4,text,true,,1221,307,2,2,http://market-final-project.herokuapp.com/buyer/order/,277,0,0
+1680274056360,265,Get Buyer Order by Id,200,OK,Seller 1-4,text,true,,1219,312,2,2,http://market-final-project.herokuapp.com/buyer/order/23604,265,0,0
+1680274056625,273,Edit Bid Price Order,200,OK,Seller 1-4,text,true,,679,410,2,2,http://market-final-project.herokuapp.com/buyer/order/23604,273,0,0
+1680274056898,275,Delete Seller Product,200,OK,Seller 1-4,text,true,,322,364,2,2,http://market-final-project.herokuapp.com/seller/product/57747,275,0,0
+1680273748190,317297,Get Buyer Product,200,OK,Seller 1-7,text,true,,13764199,181,1,1,http://market-final-project.herokuapp.com/buyer/product/,2388,0,0
+1680274065554,496,Get Buyer Product By Id,200,OK,Seller 1-7,text,true,,903,182,1,1,http://market-final-project.herokuapp.com/buyer/product/57748,496,0,245
+1680274066050,273,Post Buyer Order,201,Created,Seller 1-7,text,true,,684,813,1,1,http://market-final-project.herokuapp.com/buyer/order,273,0,0
+1680274066337,265,Get Buyer Order,200,OK,Seller 1-7,text,true,,1234,316,1,1,http://market-final-project.herokuapp.com/buyer/order/,265,0,0
+1680274066602,263,Get Buyer Order by Id,200,OK,Seller 1-7,text,true,,1232,321,1,1,http://market-final-project.herokuapp.com/buyer/order/23605,263,0,0
+1680274066866,270,Edit Bid Price Order,200,OK,Seller 1-7,text,true,,679,419,1,1,http://market-final-project.herokuapp.com/buyer/order/23605,270,0,0
+1680274067136,829,Delete Seller Product,200,OK,Seller 1-7,text,true,,322,372,1,1,http://market-final-project.herokuapp.com/seller/product/57754,829,0,0
